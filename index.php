@@ -47,6 +47,8 @@ require $system_dir.'/vendor/autoload.php';
 
 $app = require_once $system_dir.'/bootstrap/app.php';
 
+
+
 $kernel = $app->make(Kernel::class);
 
 $response = tap($kernel->handle(
